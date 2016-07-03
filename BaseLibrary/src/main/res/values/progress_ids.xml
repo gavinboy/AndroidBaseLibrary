@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="background" type="id" />
+    <item name="label" type="id"></item>
+    <item name="container" type="id"></item>
+    <item name="details_label" type="id"></item>
+
+
+</resources>

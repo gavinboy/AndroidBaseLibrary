@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <import type="com.tom.lib.sample.dialog.DialogSampleActivity"></import>
+        <variable
+            name="listener"
+            type="DialogSampleActivity"></variable>
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="showSpinIndeterminateProgress"
+            android:onClick="@{listener.showSpinIndeterminateProgress}"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="showPieIndeterminateProgress"
+            android:onClick="@{listener.showPieIndeterminateProgress}"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="showAnnularDeterminateProgress"
+            android:onClick="@{listener.showAnnularDeterminateProgress}"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="showBarDdeterminateProgress"
+            android:onClick="@{listener.showBarDdeterminateProgress}"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="showCustomViewProgress"
+            android:onClick="@{listener.showCustomViewProgress}"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="showDimBackgroundProgress"
+            android:onClick="@{listener.showDimBackgroundProgress}"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="showColorAnimateProgress"
+            android:onClick="@{listener.showColorAnimateProgress}"
+            />
+
+    </LinearLayout>
+</layout>
