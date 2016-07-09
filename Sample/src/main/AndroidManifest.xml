@@ -16,6 +16,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".dialog.DialogSampleActivity"></activity>
+
+        <activity android:name=".indicator.IndicatorActivity"
+                  android:theme="@style/Base.ThemeOverlay.AppCompat.ActionBar">
+            ></activity>
     </application>
 
 </manifest>

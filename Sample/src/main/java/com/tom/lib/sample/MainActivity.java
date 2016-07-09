@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.tom.lib.sample.databinding.ActivityMainBinding;
 import com.tom.lib.sample.dialog.DialogSampleActivity;
+import com.tom.lib.sample.indicator.IndicatorActivity;
 
 public class MainActivity extends Activity {
     private ActivityMainBinding mBinding;
@@ -15,12 +16,17 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mBinding= DataBindingUtil.setContentView(this,R.layout.activity_main);
-        mBinding.setVariable(com.tom.lib.sample.BR.listener,this);
+        mBinding.setListener(this);
     }
 
     public void showDialogActivity(View mView){
         Intent intent=new Intent(this, DialogSampleActivity.class);
         this.startActivity(intent);
 
+    }
+
+    public void showIndicatorActivity(View mView){
+        Intent intent=new Intent(this, IndicatorActivity.class);
+        this.startActivity(intent);
     }
 }
