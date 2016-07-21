@@ -20,6 +20,9 @@
         <activity android:name=".indicator.IndicatorActivity"
                   android:theme="@style/Base.ThemeOverlay.AppCompat.ActionBar">
             ></activity>
+
+        <activity android:name=".ptr.PtrActivity"></activity>
+        <activity android:name=".ptr.SimplePtrActivity"></activity>
     </application>
 
 </manifest>

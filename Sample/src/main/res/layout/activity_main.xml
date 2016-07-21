@@ -33,6 +33,12 @@
             android:text="Indicator"
             android:onClick="@{listener.showIndicatorActivity}"
             />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ptr"
+            android:onClick="@{listener.showPtrActivity}"
+            />
     </LinearLayout>
 
 </layout>
