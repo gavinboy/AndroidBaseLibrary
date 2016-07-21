@@ -7,6 +7,8 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.base.dialog.pop.ActionSheetDialog;
+import com.base.dialog.pop.AlertDialog;
 import com.base.dialog.progress.ProgressView;
 import com.tom.lib.sample.R;
 import com.tom.lib.sample.databinding.DialogLayoutBinding;
@@ -85,6 +87,35 @@ public class DialogSampleActivity extends Activity {
                 .setWindowColor(getResources().getColor(R.color.colorPrimary))
                 .setAnimationSpeed(2);
         hud.show();
+    }
+
+    public void showActionSheetDialog(View mView){
+        new ActionSheetDialog(mView.getContext()).builder()
+                .addSheetItem("支付宝", ActionSheetDialog.SheetItemColor.Blue, new ActionSheetDialog.OnSheetItemClickListener() {
+                    @Override
+                    public void onClick(int which) {
+
+                    }
+                }).addSheetItem("微信", ActionSheetDialog.SheetItemColor.Blue, new ActionSheetDialog.OnSheetItemClickListener() {
+            @Override
+            public void onClick(int which) {
+
+            }
+        }).show();
+    }
+
+    public void showAlertDialog(View mView){
+        new AlertDialog(mView.getContext())
+                .builder()
+                .setTitle("提醒")
+                .setMsg("今天连续登陆15天")
+                .setPositiveButton("确定", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                    }
+                })
+        .show();
     }
 
 

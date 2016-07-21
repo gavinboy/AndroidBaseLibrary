@@ -60,5 +60,19 @@
             android:onClick="@{listener.showColorAnimateProgress}"
             />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="showActionSheetDialog"
+            android:onClick="@{listener.showActionSheetDialog}"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="showAlertDialog"
+            android:onClick="@{listener.showAlertDialog}"
+            />
+
     </LinearLayout>
 </layout>
