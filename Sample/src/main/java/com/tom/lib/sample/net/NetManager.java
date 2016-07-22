@@ -1,5 +1,8 @@
 package com.tom.lib.sample.net;
 
+import com.tom.lib.sample.convert.ToStringConverterFactory;
+
+import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
@@ -10,14 +13,18 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 public class NetManager {
     private Retrofit mRetrofit;
+    private OkHttpClient mClient;
     private static class NetManagerHolder{
         private static final NetManager NETMANAGER_INSTANCE=new NetManager();
     }
 
     private NetManager(){
+        mClient=new OkHttpClient.Builder().build();
         mRetrofit = new Retrofit.Builder()
-                .baseUrl("http://cube-server.liaohuqiu.net/api_demo/image-list.php")
-                .addConverterFactory(GsonConverterFactory.create())
+                .client(mClient)
+                .baseUrl("http://cube-server.liaohuqiu.net/")
+                .addConverterFactory(new ToStringConverterFactory())
+                //.addConverterFactory(GsonConverterFactory.create())
                 .build();
     }
 

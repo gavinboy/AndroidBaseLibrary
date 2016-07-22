@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    >
-
-    <data class="SimpleDataBind">
-
-    </data>
-    <com.base.ptr.PtrClassicFrameLayout
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.base.ptr.PtrClassicFrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/rotate_header_grid_view_frame"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -36,5 +32,5 @@
             android:stretchMode="columnWidth" />
 
     </com.base.ptr.PtrClassicFrameLayout>
-</layout>
 
+</RelativeLayout>
