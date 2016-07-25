@@ -101,7 +101,6 @@ public class SimplePtrActivity extends Activity {
                 mAdapter.addAll(response.body());
                 mPtrFrame.refreshComplete();
                 mAdapter.notifyDataSetChanged();
-
             }
 
             @Override
