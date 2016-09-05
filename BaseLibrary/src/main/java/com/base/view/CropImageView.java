@@ -24,7 +24,8 @@ import android.util.TypedValue;
 import android.view.MotionEvent;
 import android.widget.ImageView;
 
-import com.lzy.imagepicker.R;
+
+import com.base.R;
 
 import java.io.File;
 import java.io.IOException;

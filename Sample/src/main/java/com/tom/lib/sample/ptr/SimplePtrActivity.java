@@ -93,10 +93,6 @@ public class SimplePtrActivity extends Activity {
         imagesCalls.enqueue(new Callback<List<String>>() {
             @Override
             public void onResponse(Call<List<String>> call, Response<List<String>> response) {
-                for(String url:response.body()){
-                    Log.d("yzy","url:"+url);
-                }
-
                 mAdapter.clear();
                 mAdapter.addAll(response.body());
                 mPtrFrame.refreshComplete();
