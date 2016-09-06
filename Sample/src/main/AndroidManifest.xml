@@ -2,6 +2,8 @@
 <manifest package="com.tom.lib.sample"
           xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,16 +17,16 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".dialog.DialogSampleActivity"></activity>
-
-        <activity android:name=".indicator.IndicatorActivity"
-                  android:theme="@style/Base.ThemeOverlay.AppCompat.ActionBar">
-            ></activity>
-
-        <activity android:name=".ptr.PtrActivity"></activity>
-        <activity android:name=".ptr.SimplePtrActivity"></activity>
+        <activity android:name=".dialog.DialogSampleActivity"/>
+        <activity
+            android:name=".indicator.IndicatorActivity"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.ActionBar">
+            >
+        </activity>
+        <activity android:name=".ptr.PtrActivity"/>
+        <activity android:name=".ptr.SimplePtrActivity"/>
+        <activity android:name=".rxbus.RxBusActivity">
+        </activity>
     </application>
-
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 
 </manifest>

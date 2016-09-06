@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.tom.lib.sample.rxbus.ObservableFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="被观察者"/>
+
+    <TextView
+        android:id="@+id/tv_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="已经发送事件:"/>
+
+    <Button
+        android:id="@+id/btn_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Event"
+
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/black"
+        ></View>
+
+    <TextView
+        android:id="@+id/tv_sticky_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="已经发送粘性事件:"/>
+
+    <Button
+        android:id="@+id/btn_sticky_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Sticky Event"></Button>
+
+
+
+
+</LinearLayout>
